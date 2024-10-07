@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_arrow_back"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_iknip"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/arrow_back"
+        android:layout_alignBottom="@id/arrow_back"
+        android:layout_toEndOf="@id/arrow_back"
+        android:layout_marginStart="5dp"/>
+
+    <ImageView
+        android:id="@+id/titik_tiga_icon_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_titik_tiga"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@id/arrow_back"
+        android:layout_alignBottom="@id/arrow_back"
+        android:layout_alignTop="@id/arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bell"
+        android:layout_toLeftOf="@id/titik_tiga_icon_profile"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/pp_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pp"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/jml_postingan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_6956"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@id/pp_profile"
+        android:layout_alignTop="@id/pp_profile"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"/>
+
+    <TextView
+        android:id="@+id/jml_pengikut"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="27,7jt Pengikut"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@id/jml_postingan"
+        android:layout_alignTop="@id/jml_postingan"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="219 Mengikuti"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_toRightOf="@id/jml_pengikut"
+        android:layout_alignTop="@id/jml_pengikut"/>
+
+    <TextView
+        android:id="@+id/username2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ikhwan Hanipp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/pp_profile"
+        android:layout_alignLeft="@id/pp_profile"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmer"
+        android:textStyle="normal"
+        android:textColor="#9A9A9A"
+        android:textSize="16sp"
+        android:layout_below="@id/username2"
+        android:layout_alignLeft="@id/username2"/>
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pekerjaan"
+        android:layout_alignLeft="@id/pekerjaan"
+        android:text="@string/you_might_not_think_that_programmers_are_artists_but_programming_is_an_extremely_creative_profession_it_s_logic_based_creativity_john_romero"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_editProfile"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bio"
+        android:text="Edit profile"
+        android:textColor="#000000"
+        android:background="@drawable/btn_edit_profile"
+        android:layout_alignLeft="@id/bio"
+        app:backgroundTint="#EFEFEF"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_bagikanProfile"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bio"
+        android:text="Edit profile"
+        android:textColor="#000000"
+        android:background="@drawable/btn_edit_profile"
+        android:layout_alignRight="@id/bio"
+        app:backgroundTint="#EFEFEF"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/postingan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_feed"
+        android:layout_below="@id/btn_editProfile"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"/>
+
+    <ImageView
+        android:id="@+id/reels_profile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_reels"
+        android:layout_below="@id/btn_editProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_tag"
+        android:layout_below="@id/btn_editProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/home_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_home"
+            android:layout_marginRight="56dp"/>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_search"
+            android:layout_marginRight="56dp"/>
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_upload"/>
+        <ImageView
+            android:id="@+id/reels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_reels"
+            android:layout_marginLeft="56dp"/>
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_profile_active"
+            android:layout_marginLeft="56dp"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
